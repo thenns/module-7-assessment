@@ -1,0 +1,24 @@
+Results for extraLargeArray
+    insert 555.601506 ms
+    append 2.439768 ms
+
+Results for tinyArray
+    insert 23.47 micro seconds
+    append 56.44 micro seconds
+    
+Results for smallArray
+    insert 35.14 micro seconds
+    append 70.59 micro seconds
+
+Resutls for mediumArray
+    insert 137.561 micro seconds
+    append 120.971 micro seconds
+
+Results for largeArray
+    insert 5.561 ms
+    append 610.182 micro seconds
+
+push() and unshift() are methods that add an element to an array. The only difference is that unshif() adds the 
+element to the beginning of the array, and push() adds it to the end. Unshift() is slower because it has to move all the 
+elements of the array by one, but from the test results it seems like unshift is more scalable. 
+So like with everything in software engineering, whichever method you use will depend on the situation.
