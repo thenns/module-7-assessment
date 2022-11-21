@@ -14,3 +14,4 @@ perf.start();
 console.log(addToZero([1,2,3,4, -2], 0));
 let results = perf.stop();
 console.log("add to zero function", results.preciseWords);
+//runtime is 2.1 ms

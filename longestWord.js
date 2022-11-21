@@ -16,3 +16,4 @@ perf.start();
 console.log(findLongestWord(['a','not','if','hello']));
 let results = perf.stop();
 console.log("find longest word function", results.preciseWords);
+//function runtime 2.2 ms

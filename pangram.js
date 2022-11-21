@@ -14,3 +14,4 @@ perf.start();
 console.log(isPangram('the quick brown fox jumps over the lazy dog'));
 let results = perf.stop();
 console.log("is pangram function", results.preciseWords);
+//function runtime 2.4 ms

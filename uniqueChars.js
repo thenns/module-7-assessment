@@ -15,5 +15,4 @@ perf.start()
 console.log(hasUniqueChars("Moonday"));
 let results = perf.stop();
 console.log("unique chars function", results.preciseWords);
-//console.log(hasUniqueChars("Moonday"));
-
+//function runtime 2.1 ms
