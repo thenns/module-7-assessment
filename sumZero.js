@@ -1,17 +1,11 @@
 function addToZero(arr, sum){
     for (let i = 0; i < arr.length; i++){
-        let comparator = 0;
-        if (arr[comparator] + arr[i] === sum){
-            return true;
-        } else if (arr[comparator] + arr[i] != sum){
-            comparator++;
-        } else {
-            return false;
+        for (let j = i + 1; j < arr.length; j++){
+            if (arr[i] + arr[j] === sum){
+                return true;
+            }
         }
     }
-};
-if (addToZero ([1,2,3,4,-1], 0)) {
-    console.log('true')
-} else {
-    console.log('false')
+    return false;
 }
+console.log(addToZero([1,2,3,4, -2], 0));
