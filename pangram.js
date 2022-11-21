@@ -1,3 +1,5 @@
+const perf = require('execution-time')();
+
 function isPangram(str){
     let strArr = str.toLowerCase();
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -8,5 +10,7 @@ function isPangram(str){
     }
     return true;
 }
-
+perf.start();
 console.log(isPangram('the quick brown fox jumps over the lazy dog'));
+let results = perf.stop();
+console.log("is pangram function", results.preciseWords);

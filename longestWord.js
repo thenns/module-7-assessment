@@ -1,3 +1,5 @@
+const perf = require('execution-time')();
+
 function findLongestWord(strArr){
     let max_str = strArr[0].length;
     let answer = strArr[0];
@@ -10,5 +12,7 @@ function findLongestWord(strArr){
     }
     return answer.length;
 }
-
+perf.start();
 console.log(findLongestWord(['a','not','if','hello']));
+let results = perf.stop();
+console.log("find longest word function", results.preciseWords);
